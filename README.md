@@ -16,10 +16,10 @@ password: password
 docker_image_tag: v1.8.0
 
 openpai_kubespray_extra_var:
-  kube_image_repo: "gcr4cn"
-  gcr_image_repo: "gcr4cn"
-  pod_infra_image_repo: "gcr4cn/pause-{{ image_arch }}"
-  dnsautoscaler_image_repo: "gcr4cn/cluster-proportional-autoscaler-{{ image_arch }}"
+  kube_image_repo: "siaimes"
+  gcr_image_repo: "siaimes"
+  pod_infra_image_repo: "siaimes/pause-{{ image_arch }}"
+  dnsautoscaler_image_repo: "siaimes/cluster-proportional-autoscaler-{{ image_arch }}"
   kubeadm_download_url: "http://10.10.10.10:10000/k8s-share/kubernetes-release/release/{{ kubeadm_version }}/bin/linux/{{ image_arch }}/kubeadm"
   hyperkube_download_url: "http://10.10.10.10:10000/k8s-share/kubernetes-release/release/{{ kube_version }}/bin/linux/{{ image_arch }}/hyperkube"
   cni_download_url: "http://10.10.10.10:10000/k8s-share/containernetworking/plugins/releases/download/{{ cni_version }}/cni-plugins-linux-{{ image_arch }}-{{ cni_version }}.tgz"
