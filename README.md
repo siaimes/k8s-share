@@ -40,3 +40,8 @@ to
 ```
 curl "http://10.10.10.10:10000/k8s-share/NVIDIA/k8s-device-plugin/1.0.0-beta4/nvidia-device-plugin.yml" \
 ```
+
+# Thanks
+
+1. [OpenPAI](https://github.com/microsoft/pai)
+2. [AliyunContainerService/image-syncer](https://github.com/AliyunContainerService/image-syncer) and [willzhang/image-syncer](https://github.com/willzhang/image-syncer) and [gcr4cn/image-syncer](https://github.com/gcr4cn/image-syncer)
