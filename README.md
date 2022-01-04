@@ -1,6 +1,8 @@
 # k8s-share for OpenPAI
 
-## 1. Select any host that is reachable by any node in the cluster (assuming the IP is 10.10.10.10).
+## 1. Select any host that is reachable by any node in the cluster
+
+Assuming the IP is `10.10.10.10` here, a static IP is required, which can be run on the dev-box machine.
 
 ## 2. Choose a port (e.g. `10000`) and start a container
 
