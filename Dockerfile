@@ -20,4 +20,4 @@ RUN curl https://raw.githubusercontent.com/NVIDIA/k8s-device-plugin/1.0.0-beta4/
 
 FROM nginx
 
-COPY --from=builder /usr/share/nginx/html/k8s-share /usr/share/nginx/html
+COPY --from=builder /usr/share/nginx/html/k8s-share /usr/share/nginx/html/k8s-share
