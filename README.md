@@ -25,3 +25,16 @@ openpai_kubespray_extra_var:
   cni_download_url: "http://10.10.10.10:10000/k8s-share/containernetworking/plugins/releases/download/{{ cni_version }}/cni-plugins-linux-{{ image_arch }}-{{ cni_version }}.tgz"
   calicoctl_download_url: "http://10.10.10.10:10000/k8s-share/projectcalico/calicoctl/releases/download/{{ calico_ctl_version }}/calicoctl-linux-{{ image_arch }}"
 ```
+
+## 4. If the device-plugin service starts slowly or fails to start
+
+Change [this](https://github.com/microsoft/pai/blob/529db900c351c7922c3c6c81c4798f4f1bd000e1/src/device-plugin/deploy/start.sh.template#L32)
+```
+svn cat https://github.com/NVIDIA/k8s-device-plugin.git/tags/1.0.0-beta4/nvidia-device-plugin.yml \
+```
+
+to 
+
+```
+curl "http://10.10.10.10:10000/k8s-share/NVIDIA/k8s-device-plugin/1.0.0-beta4/nvidia-device-plugin.yml" \
+```
