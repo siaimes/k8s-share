@@ -1,6 +1,6 @@
 FROM nginx AS builder
 
-RUN apt update && apt install wget
+RUN apt-get update -y && apt-get install wget -y
 
 RUN mkdir -p /usr/share/nginx/html/k8s-share/containernetworking/plugins/releases/download/v0.8.1
 RUN wget https://github.com/containernetworking/plugins/releases/download/v0.8.1/cni-plugins-linux-amd64-v0.8.1.tgz \
