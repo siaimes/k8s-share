@@ -7,7 +7,7 @@ Assuming the IP is `10.10.10.10` here, a static IP is required, which can be run
 ## 2. Choose a port (e.g. `10000`) and start a container
 
 ```
-sudo docker run -itd -p 0.0.0.0:10000:80 --restart always --name k8s_share siaimes/k8s-share:v1.8.0
+sudo docker run -itd -p 0.0.0.0:10000:80 --restart always --name k8s_share siaimes/k8s-share:v1.8.1
 ```
 
 ## 3. Use the following configuration file
@@ -15,7 +15,7 @@ sudo docker run -itd -p 0.0.0.0:10000:80 --restart always --name k8s_share siaim
 ```
 user: username
 password: password
-docker_image_tag: v1.8.0
+docker_image_tag: v1.8.1
 
 openpai_kubespray_extra_var:
   kube_image_repo: "siaimes"
