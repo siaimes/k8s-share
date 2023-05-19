@@ -3,7 +3,7 @@ name: image-sync
 on:
   release:
     types: [published]
-  push
+  push:
 
 env:
   IMAGE_SYNCER_VERSION: v1.3.1
